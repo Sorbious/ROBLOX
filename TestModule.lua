@@ -4,7 +4,7 @@ function module.new(request, value)
   if string.lower(request) == "debugprint" then
     print("DEBUG:", value)
   else
-    warn("Request",  value, "not found.")
+    warn("Request",  request, "not found.")
   end
 end
 
