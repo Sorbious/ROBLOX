@@ -3,6 +3,9 @@ local module = {}
 function module.request(request, value)
   if string.lower(request) == "debugprint" then
     print("DEBUG:", value)
+  elseif string.lower(request) == "version" then
+    local VERSION = 1.5
+    warn("MODULE VERSION:", VERSION)
   else
     warn("Request",  request, "not found.")
   end
