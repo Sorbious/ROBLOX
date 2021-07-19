@@ -1,6 +1,6 @@
 local module = {}
 
-function module.new(request, value)
+function module.request(request, value)
   if string.lower(request) == "debugprint" then
     print("DEBUG:", value)
   else
