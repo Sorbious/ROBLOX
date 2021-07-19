@@ -10,7 +10,7 @@ end
 
 function module:KillPlayer(player)
   local Players = game:GetService("Players")
-  if Players:FindFirstChild(player) then
+  if Players:FindFirstChild(player.Name) then
     local Character = player.Character
     local Humanoid = Character:FindFirstChild("Humanoid")
     if Humanoid then
