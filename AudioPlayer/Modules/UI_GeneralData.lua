@@ -2,6 +2,19 @@ local UI = {
 
 	["ICONS"] = {
 		["TOPBAR"] = {
+			
+			["TITLEBAR"] = {
+				["ICON"] = {
+					["ASSET-ID"] = "6842176083",
+					["COLORS"] = {
+						-- Varies as for UI Themes.
+						["Default"] = Color3.fromRGB(255, 255, 255),
+						["Dark"] = Color3.fromRGB(0, 0, 0),
+						["Spotify"] = Color3.fromRGB(30, 215, 96),
+					}
+				}
+			},
+			
 			["CONTROLMENU"] = {
 				
 				["RESTOREDOWN-MAXIMIZE"] = {
