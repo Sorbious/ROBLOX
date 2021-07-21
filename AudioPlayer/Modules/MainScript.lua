@@ -7,8 +7,8 @@ local Modules = {
 local MAINSCRIPT = {}
 
 function MAINSCRIPT:CreateUI(playerGui)
-  local UI_GeneralData = loadstring(Modules["UI_GeneralData"])
-  
+  	local UI_GeneralData = loadstring(Modules["UI_GeneralData"])
+	
 	-- Create the UI
 	local ScreenGui = Instance.new("ScreenGui", playerGui)
 	ScreenGui.Name = "AudioPlayerHUD"
@@ -92,8 +92,8 @@ function MAINSCRIPT:CreateUI(playerGui)
 	Icon_IconFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Icon_IconFrame.Size = UDim2.new(0.4, 0, 0.7, 0)
 	Icon_IconFrame.ZIndex = 1
-	Icon_IconFrame.Image = "rbxassetid://".. UI_GeneralData["ICONS"]["TOPBAR"]["TITLEBAR"]["ICON"]["ASSET-ID"]
-	Icon_IconFrame.ImageColor3 = UI_GeneralData["ICONS"]["TOPBAR"]["TITLEBAR"]["ICON"]["COLORS"]["Default"]
+	Icon_IconFrame.Image = "rbxassetid://".. UI_GeneralData()["ICONS"]["TOPBAR"]["TITLEBAR"]["ICON"]["ASSET-ID"]
+	Icon_IconFrame.ImageColor3 = UI_GeneralData()["ICONS"]["TOPBAR"]["TITLEBAR"]["ICON"]["COLORS"]["Default"]
 	Icon_IconFrame.ScaleType = Enum.ScaleType.Stretch
 
 	local UIAspectRatioConstraint_Icon = Instance.new("UIAspectRatioConstraint", Icon_IconFrame)
