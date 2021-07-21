@@ -7,6 +7,7 @@ local Modules = {
 local MAINSCRIPT = {}
 
 function MAINSCRIPT:CreateUI(playerGui)
+	warn("CreateUI requested.")
   	local UI_GeneralData = loadstring(Modules["UI_GeneralData"])
 	
 	-- Create the UI
@@ -147,6 +148,7 @@ function MAINSCRIPT:CreateUI(playerGui)
 	Background_ContentContainer.Visible = true
 	Background_ContentContainer.ZIndex = 1
 
+	warn("CreateUI ended.")
 end
 
 
